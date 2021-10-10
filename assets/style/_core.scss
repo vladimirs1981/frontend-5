@@ -58,8 +58,9 @@ body {
         .screen {
             background-color: $screenWhite;
 
-            #screen {
-                background-color: $screenWhite;
+            .previous-number,
+            .current-number {
+                color: $fontDarkColor;
             }
         }
 
@@ -134,8 +135,9 @@ body {
         .screen {
             background-color: $screenPurple;
 
-            #screen {
-                background-color: $screenPurple;
+            .previous-number,
+            .current-number {
+                color: $fontYellowColor;
             }
         }
 
