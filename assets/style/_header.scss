@@ -60,7 +60,6 @@ header {
 
         input {
             width: 71px;
-            background-color: $bgColorBlue;
             -webkit-appearance: none;
             &:focus {
                 outline: none;
@@ -68,7 +67,6 @@ header {
             &::-webkit-slider-runnable-track {
                 height: 26px;
                 cursor: pointer;
-                background: $sliderDarkBlue;
                 border-radius: 13px;
                 padding-left: 4px;
                 padding-right: 4px;
@@ -77,16 +75,9 @@ header {
                 height: 16px;
                 width: 16px;
                 border-radius: 15px;
-                background: $buttonRedShadow;
                 cursor: pointer;
                 -webkit-appearance: none;
                 margin-top: 5px;
-                &:hover {
-                    background: $buttonRedHover;
-                }
-            }
-            &:focus::-webkit-slider-runnable-track {
-                background: $sliderDarkBlue;
             }
         }
     }

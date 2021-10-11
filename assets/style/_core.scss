@@ -1,4 +1,5 @@
 @use '_variables' as *;
+@import '_mixins';
 
 * {
     margin: 0;
@@ -10,7 +11,6 @@ body {
     min-height: 100vh;
     width: 100%;
     font-family: $primaryFont;
-    background-color: $bgColorBlue;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -28,158 +28,15 @@ body {
         }
     }
 }
-//theme 2
-.theme2 {
-    background-color: $bgColorGrey;
 
-    main {
-        header {
-            color: $fontDarkColor;
-
-            .slidecontainer {
-                input {
-                    background-color: $bgColorGrey;
-                    &::-webkit-slider-runnable-track {
-                        background: $buttonBodyGrey;
-                    }
-                    &::-webkit-slider-thumb {
-                        background: $buttonOrange;
-                        &:hover {
-                            background: $buttonOrangeHover;
-                        }
-                    }
-                    &:focus::-webkit-slider-runnable-track {
-                        background: $buttonBodyGrey;
-                    }
-                }
-            }
-        }
-
-        .screen {
-            background-color: $screenWhite;
-
-            .previous-number,
-            .current-number {
-                color: $fontDarkColor;
-            }
-        }
-
-        .buttons {
-            .btn_container {
-                background-color: $buttonBodyGrey;
-            }
-
-            .num {
-                background-color: $buttonGreyish;
-                color: $fontDarkColor;
-                box-shadow: inset 0px -4px 0px $buttonTheme2Shadow;
-                &:hover {
-                    background-color: $fontWhiteColor;
-                }
-                &:active {
-                    background-color: $buttonBodyGrey;
-                }
-            }
-
-            .blueBtn {
-                background-color: $buttonBlue;
-                box-shadow: inset 0px -4px 0px $buttonBlueShadow;
-                &:hover {
-                    background-color: $buttonBlueTheme2Hover;
-                }
-                &:active {
-                    background-color: $buttonBlue;
-                }
-            }
-
-            .equal {
-                background-color: $buttonOrange;
-                box-shadow: inset 0px -4px 0px $buttonOrangeShadow;
-                &:hover {
-                    background-color: $buttonOrangeHover;
-                }
-                &:active {
-                    background-color: $buttonOrange;
-                }
-            }
-        }
-    }
+.dark {
+    @include dark;
 }
-//theme 3
-.theme3 {
-    background-color: $bgColorPurple;
 
-    main {
-        header {
-            color: $fontYellowColor;
+.light {
+    @include light;
+}
 
-            .slidecontainer {
-                input {
-                    background-color: $bgColorPurple;
-                    &::-webkit-slider-runnable-track {
-                        background: $screenPurple;
-                    }
-                    &::-webkit-slider-thumb {
-                        background: $buttonBlueTheme3Color;
-                        &:hover {
-                            background: $buttonBlueTheme3Hover;
-                        }
-                    }
-                    &:focus::-webkit-slider-runnable-track {
-                        background: $screenPurple;
-                    }
-                }
-            }
-        }
-
-        .screen {
-            background-color: $screenPurple;
-
-            .previous-number,
-            .current-number {
-                color: $fontYellowColor;
-            }
-        }
-
-        .buttons {
-            .btn_container {
-                background-color: $screenPurple;
-            }
-
-            .num {
-                background-color: $buttonPurple;
-                color: $fontYellowColor;
-                box-shadow: inset 0px -4px 0px $buttonPurpleShadow;
-                &:hover {
-                    background-color: $buttonPurpleHover;
-                }
-                &:active {
-                    background-color: $buttonPurple;
-                }
-            }
-
-            .blueBtn {
-                background-color: $buttonLightPurple;
-                box-shadow: inset 0px -4px 0px $buttonLightPurpleShadow;
-                &:hover {
-                    background-color: $buttonLightPurpleHover;
-                }
-                &:active {
-                    background-color: $buttonLightPurple;
-                }
-            }
-
-            .equal {
-                background-color: $buttonBlueTheme3Color;
-                box-shadow: inset 0px -4px 0px $equalButtonShadow;
-                color: $equalTextColor;
-                &:hover {
-                    background-color: $buttonBlueTheme3Hover;
-                }
-                &:active {
-                    background-color: $buttonBlueTheme3Color;
-                }
-            }
-        }
-    }
+.purple {
+    @include purple;
 }

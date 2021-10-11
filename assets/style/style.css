@@ -8,7 +8,6 @@ body {
   min-height: 100vh;
   width: 100%;
   font-family: "Spartan", sans-serif;
-  background-color: #434a59;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -28,130 +27,193 @@ body main {
   }
 }
 
-.theme2 {
+.dark {
+  background-color: #434a59;
+}
+.dark main header {
+  color: #ffffff;
+}
+.dark main header .slidecontainer input {
+  background-color: #434a59;
+}
+.dark main header .slidecontainer input::-webkit-slider-runnable-track {
+  background: #242d44;
+}
+.dark main header .slidecontainer input::-webkit-slider-thumb {
+  background: #93261a;
+}
+.dark main header .slidecontainer input::-webkit-slider-thumb:hover {
+  background: #f96b5b;
+}
+.dark main header .slidecontainer input:focus::-webkit-slider-runnable-track {
+  background: #242d44;
+}
+.dark main .screen {
+  background-color: #181f33;
+}
+.dark main .screen .previous-number,
+.dark main .screen .current-number {
+  color: #ffffff;
+}
+.dark main .buttons .btn_container {
+  background-color: #242d44;
+}
+.dark main .buttons .num {
+  background-color: #eae3dc;
+  color: #434a59;
+  box-shadow: inset 0px -4px 0px #b3a497;
+}
+.dark main .buttons .num:hover {
+  background-color: #fffffe;
+}
+.dark main .buttons .num:active {
+  background-color: #eae3dc;
+}
+.dark main .buttons .blueBtn {
+  background-color: #647198;
+  box-shadow: inset 0px -4px 0px #414e73;
+}
+.dark main .buttons .blueBtn:hover {
+  background-color: #a2b2e1;
+}
+.dark main .buttons .blueBtn:active {
+  background-color: #647198;
+}
+.dark main .buttons .equal {
+  background-color: #d03f2f;
+  box-shadow: inset 0px -4px 0px #93261a;
+}
+.dark main .buttons .equal:hover {
+  background-color: #f96b5b;
+}
+.dark main .buttons .equal:active {
+  background-color: #d03f2f;
+}
+
+.light {
   background-color: #e6e6e6;
 }
-.theme2 main header {
+.light main header {
   color: #36362c;
 }
-.theme2 main header .slidecontainer input {
+.light main header .slidecontainer input {
   background-color: #e6e6e6;
 }
-.theme2 main header .slidecontainer input::-webkit-slider-runnable-track {
+.light main header .slidecontainer input::-webkit-slider-runnable-track {
   background: #d2cdcd;
 }
-.theme2 main header .slidecontainer input::-webkit-slider-thumb {
+.light main header .slidecontainer input::-webkit-slider-thumb {
   background: #c85402;
 }
-.theme2 main header .slidecontainer input::-webkit-slider-thumb:hover {
+.light main header .slidecontainer input::-webkit-slider-thumb:hover {
   background: #ff8a38;
 }
-.theme2 main header .slidecontainer input:focus::-webkit-slider-runnable-track {
+.light main header .slidecontainer input:focus::-webkit-slider-runnable-track {
   background: #d2cdcd;
 }
-.theme2 main .screen {
+.light main .screen {
   background-color: #eeeeee;
 }
-.theme2 main .screen .previous-number,
-.theme2 main .screen .current-number {
+.light main .screen .previous-number,
+.light main .screen .current-number {
   color: #36362c;
 }
-.theme2 main .buttons .btn_container {
+.light main .buttons .btn_container {
   background-color: #d2cdcd;
 }
-.theme2 main .buttons .num {
+.light main .buttons .num {
   background-color: #e5e4e1;
   color: #36362c;
   box-shadow: inset 0px -4px 0px #a79e91;
 }
-.theme2 main .buttons .num:hover {
+.light main .buttons .num:hover {
   background-color: #ffffff;
 }
-.theme2 main .buttons .num:active {
+.light main .buttons .num:active {
   background-color: #d2cdcd;
 }
-.theme2 main .buttons .blueBtn {
+.light main .buttons .blueBtn {
   background-color: #378187;
   box-shadow: inset 0px -4px 0px #414e73;
 }
-.theme2 main .buttons .blueBtn:hover {
+.light main .buttons .blueBtn:hover {
   background-color: #62b5bc;
 }
-.theme2 main .buttons .blueBtn:active {
+.light main .buttons .blueBtn:active {
   background-color: #378187;
 }
-.theme2 main .buttons .equal {
+.light main .buttons .equal {
   background-color: #c85402;
   box-shadow: inset 0px -4px 0px #873901;
 }
-.theme2 main .buttons .equal:hover {
+.light main .buttons .equal:hover {
   background-color: #ff8a38;
 }
-.theme2 main .buttons .equal:active {
+.light main .buttons .equal:active {
   background-color: #c85402;
 }
 
-.theme3 {
+.purple {
   background-color: #17062a;
 }
-.theme3 main header {
+.purple main header {
   color: #ffe53d;
 }
-.theme3 main header .slidecontainer input {
+.purple main header .slidecontainer input {
   background-color: #17062a;
 }
-.theme3 main header .slidecontainer input::-webkit-slider-runnable-track {
+.purple main header .slidecontainer input::-webkit-slider-runnable-track {
   background: #1e0936;
 }
-.theme3 main header .slidecontainer input::-webkit-slider-thumb {
+.purple main header .slidecontainer input::-webkit-slider-thumb {
   background: #00ded0;
 }
-.theme3 main header .slidecontainer input::-webkit-slider-thumb:hover {
+.purple main header .slidecontainer input::-webkit-slider-thumb:hover {
   background: #93fff8;
 }
-.theme3 main header .slidecontainer input:focus::-webkit-slider-runnable-track {
+.purple main header .slidecontainer input:focus::-webkit-slider-runnable-track {
   background: #1e0936;
 }
-.theme3 main .screen {
+.purple main .screen {
   background-color: #1e0936;
 }
-.theme3 main .screen .previous-number,
-.theme3 main .screen .current-number {
+.purple main .screen .previous-number,
+.purple main .screen .current-number {
   color: #ffe53d;
 }
-.theme3 main .buttons .btn_container {
+.purple main .buttons .btn_container {
   background-color: #1e0936;
 }
-.theme3 main .buttons .num {
+.purple main .buttons .num {
   background-color: #331c4d;
   color: #ffe53d;
   box-shadow: inset 0px -4px 0px #881c9e;
 }
-.theme3 main .buttons .num:hover {
+.purple main .buttons .num:hover {
   background-color: #6c34ac;
 }
-.theme3 main .buttons .num:active {
+.purple main .buttons .num:active {
   background-color: #331c4d;
 }
-.theme3 main .buttons .blueBtn {
+.purple main .buttons .blueBtn {
   background-color: #56077c;
   box-shadow: inset 0px -4px 0px #be15f4;
 }
-.theme3 main .buttons .blueBtn:hover {
+.purple main .buttons .blueBtn:hover {
   background-color: #8631af;
 }
-.theme3 main .buttons .blueBtn:active {
+.purple main .buttons .blueBtn:active {
   background-color: #56077c;
 }
-.theme3 main .buttons .equal {
+.purple main .buttons .equal {
   background-color: #00ded0;
   box-shadow: inset 0px -4px 0px #6cf9f1;
   color: #1a2327;
 }
-.theme3 main .buttons .equal:hover {
+.purple main .buttons .equal:hover {
   background-color: #93fff8;
 }
-.theme3 main .buttons .equal:active {
+.purple main .buttons .equal:active {
   background-color: #00ded0;
 }
 
@@ -212,7 +274,6 @@ header .slidecontainer .para .three {
 }
 header .slidecontainer input {
   width: 71px;
-  background-color: #434a59;
   -webkit-appearance: none;
 }
 header .slidecontainer input:focus {
@@ -221,7 +282,6 @@ header .slidecontainer input:focus {
 header .slidecontainer input::-webkit-slider-runnable-track {
   height: 26px;
   cursor: pointer;
-  background: #242d44;
   border-radius: 13px;
   padding-left: 4px;
   padding-right: 4px;
@@ -230,23 +290,15 @@ header .slidecontainer input::-webkit-slider-thumb {
   height: 16px;
   width: 16px;
   border-radius: 15px;
-  background: #93261a;
   cursor: pointer;
   -webkit-appearance: none;
   margin-top: 5px;
-}
-header .slidecontainer input::-webkit-slider-thumb:hover {
-  background: #f96b5b;
-}
-header .slidecontainer input:focus::-webkit-slider-runnable-track {
-  background: #242d44;
 }
 
 .screen {
   min-width: 327px;
   min-height: 88px;
   height: auto;
-  background-color: #181f33;
   border-radius: 10px;
   margin-bottom: 24px;
   display: flex;
@@ -271,7 +323,6 @@ header .slidecontainer input:focus::-webkit-slider-runnable-track {
 }
 .screen .previous-number,
 .screen .current-number {
-  color: #ffffff;
   font-size: 32px;
   font-weight: 700;
 }
@@ -294,7 +345,6 @@ header .slidecontainer input:focus::-webkit-slider-runnable-track {
   padding-top: 24px;
   padding-left: 15px;
   padding-bottom: 15px;
-  background-color: #242d44;
   border-radius: 10px;
 }
 @media only screen and (min-width: 1440px) {
@@ -320,19 +370,10 @@ header .slidecontainer input:focus::-webkit-slider-runnable-track {
   }
 }
 .buttons .num {
-  background-color: #eae3dc;
-  color: #434a59;
   font-size: 28px;
   font-weight: 700;
   line-height: 31.36px;
   letter-spacing: -0.47px;
-  box-shadow: inset 0px -4px 0px #b3a497;
-}
-.buttons .num:hover {
-  background-color: #fffffe;
-}
-.buttons .num:active {
-  background-color: #eae3dc;
 }
 @media only screen and (min-width: 1440px) {
   .buttons .num {
@@ -342,19 +383,11 @@ header .slidecontainer input:focus::-webkit-slider-runnable-track {
   }
 }
 .buttons .blueBtn {
-  background-color: #647198;
   color: #ffffff;
   font-size: 16px;
   font-weight: 700;
   line-height: 17.92px;
   letter-spacing: -0.27px;
-  box-shadow: inset 0px -4px 0px #414e73;
-}
-.buttons .blueBtn:hover {
-  background-color: #a2b2e1;
-}
-.buttons .blueBtn:active {
-  background-color: #647198;
 }
 @media only screen and (min-width: 1440px) {
   .buttons .blueBtn {
@@ -364,17 +397,9 @@ header .slidecontainer input:focus::-webkit-slider-runnable-track {
   }
 }
 .buttons .equal {
-  background-color: #d03f2f;
-  box-shadow: inset 0px -4px 0px #93261a;
   color: #ffffff;
   font-size: 16px;
   font-weight: 700;
-}
-.buttons .equal:hover {
-  background: #f96b5b;
-}
-.buttons .equal:active {
-  background-color: #d03f2f;
 }
 @media only screen and (min-width: 1440px) {
   .buttons .equal {

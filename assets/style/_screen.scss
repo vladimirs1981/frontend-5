@@ -4,7 +4,6 @@
     min-width: 327px;
     min-height: 88px;
     height: auto;
-    background-color: $screenDarkBlue;
     border-radius: 10px;
     margin-bottom: 24px;
     display: flex;
@@ -27,7 +26,6 @@
 
     .previous-number,
     .current-number {
-        color: $fontWhiteColor;
         font-size: 32px;
         font-weight: 700;
 

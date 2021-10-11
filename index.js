@@ -24,7 +24,7 @@ class Calculator {
     chooseOperation(operation) {
         //prevent opration if there is no number
         if (this.currentNumber === '') return;
-        //do calculation
+        //do calculation if operation button is clicked
         if (this.currentNumber != '') {
             this.calculate();
         }
