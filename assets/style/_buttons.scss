@@ -2,7 +2,6 @@
 
 .buttons {
     height: 100%;
-    width: 100%;
 
     .btn_container {
         display: flex;
@@ -13,9 +12,11 @@
         padding-left: 15px;
         padding-bottom: 15px;
         border-radius: 10px;
+        width: 327px;
 
         @media only screen and (min-width: 1440px) {
             height: 480px;
+            width: 540px;
             padding-left: 25px;
         }
     }

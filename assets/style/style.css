@@ -335,7 +335,6 @@ header .slidecontainer input::-webkit-slider-thumb {
 
 .buttons {
   height: 100%;
-  width: 100%;
 }
 .buttons .btn_container {
   display: flex;
@@ -346,10 +345,12 @@ header .slidecontainer input::-webkit-slider-thumb {
   padding-left: 15px;
   padding-bottom: 15px;
   border-radius: 10px;
+  width: 327px;
 }
 @media only screen and (min-width: 1440px) {
   .buttons .btn_container {
     height: 480px;
+    width: 540px;
     padding-left: 25px;
   }
 }
