@@ -1,0 +1,36 @@
+@use '_variables' as *;
+
+.screen {
+    min-width: 327px;
+    min-height: 88px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+    word-wrap: break-word;
+    word-break: break-all;
+    @media only screen and (min-width: 1440px) {
+        min-height: 128px;
+    }
+
+    .current-number {
+        margin-right: 24px;
+
+        @media only screen and (min-width: 1440px) {
+            margin-right: 32px;
+        }
+    }
+
+    .previous-number,
+    .current-number {
+        font-size: 32px;
+        font-weight: 700;
+
+        @media only screen and (min-width: 1440px) {
+            font-size: 48px;
+        }
+    }
+}

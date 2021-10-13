@@ -1,0 +1,42 @@
+@use '_variables' as *;
+@import '_mixins';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    font-family: $primaryFont;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    @media only screen and (min-width: 1440px) {
+        align-items: center;
+    }
+
+    main {
+        position: relative;
+        margin: 28px 24px 31px 24px;
+
+        @media only screen and (min-width: 1440px) {
+            width: 540px;
+        }
+    }
+}
+
+.dark {
+    @include dark;
+}
+
+.light {
+    @include light;
+}
+
+.purple {
+    @include purple;
+}

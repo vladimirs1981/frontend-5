@@ -1,0 +1,422 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  font-family: "Spartan", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+@media only screen and (min-width: 1440px) {
+  body {
+    align-items: center;
+  }
+}
+body main {
+  position: relative;
+  margin: 28px 24px 31px 24px;
+}
+@media only screen and (min-width: 1440px) {
+  body main {
+    width: 540px;
+  }
+}
+
+.dark {
+  background-color: #434a59;
+}
+.dark main header {
+  color: #ffffff;
+}
+.dark main header .slidecontainer input {
+  background-color: #434a59;
+}
+.dark main header .slidecontainer input::-webkit-slider-runnable-track {
+  background: #242d44;
+}
+.dark main header .slidecontainer input::-webkit-slider-thumb {
+  background: #93261a;
+}
+.dark main header .slidecontainer input::-webkit-slider-thumb:hover {
+  background: #f96b5b;
+}
+.dark main header .slidecontainer input:focus::-webkit-slider-runnable-track {
+  background: #242d44;
+}
+.dark main .screen {
+  background-color: #181f33;
+}
+.dark main .screen .previous-number,
+.dark main .screen .current-number {
+  color: #ffffff;
+}
+.dark main .buttons .btn_container {
+  background-color: #242d44;
+}
+.dark main .buttons .num {
+  background-color: #eae3dc;
+  color: #434a59;
+  box-shadow: inset 0px -4px 0px #b3a497;
+}
+.dark main .buttons .num:hover {
+  background-color: #fffffe;
+}
+.dark main .buttons .num:active {
+  background-color: #eae3dc;
+}
+.dark main .buttons .blueBtn {
+  background-color: #647198;
+  box-shadow: inset 0px -4px 0px #414e73;
+}
+.dark main .buttons .blueBtn:hover {
+  background-color: #a2b2e1;
+}
+.dark main .buttons .blueBtn:active {
+  background-color: #647198;
+}
+.dark main .buttons .equal {
+  background-color: #d03f2f;
+  box-shadow: inset 0px -4px 0px #93261a;
+}
+.dark main .buttons .equal:hover {
+  background-color: #f96b5b;
+}
+.dark main .buttons .equal:active {
+  background-color: #d03f2f;
+}
+
+.light {
+  background-color: #e6e6e6;
+}
+.light main header {
+  color: #36362c;
+}
+.light main header .slidecontainer input {
+  background-color: #e6e6e6;
+}
+.light main header .slidecontainer input::-webkit-slider-runnable-track {
+  background: #d2cdcd;
+}
+.light main header .slidecontainer input::-webkit-slider-thumb {
+  background: #c85402;
+}
+.light main header .slidecontainer input::-webkit-slider-thumb:hover {
+  background: #ff8a38;
+}
+.light main header .slidecontainer input:focus::-webkit-slider-runnable-track {
+  background: #d2cdcd;
+}
+.light main .screen {
+  background-color: #eeeeee;
+}
+.light main .screen .previous-number,
+.light main .screen .current-number {
+  color: #36362c;
+}
+.light main .buttons .btn_container {
+  background-color: #d2cdcd;
+}
+.light main .buttons .num {
+  background-color: #e5e4e1;
+  color: #36362c;
+  box-shadow: inset 0px -4px 0px #a79e91;
+}
+.light main .buttons .num:hover {
+  background-color: #ffffff;
+}
+.light main .buttons .num:active {
+  background-color: #d2cdcd;
+}
+.light main .buttons .blueBtn {
+  background-color: #378187;
+  box-shadow: inset 0px -4px 0px #414e73;
+}
+.light main .buttons .blueBtn:hover {
+  background-color: #62b5bc;
+}
+.light main .buttons .blueBtn:active {
+  background-color: #378187;
+}
+.light main .buttons .equal {
+  background-color: #c85402;
+  box-shadow: inset 0px -4px 0px #873901;
+}
+.light main .buttons .equal:hover {
+  background-color: #ff8a38;
+}
+.light main .buttons .equal:active {
+  background-color: #c85402;
+}
+
+.purple {
+  background-color: #17062a;
+}
+.purple main header {
+  color: #ffe53d;
+}
+.purple main header .slidecontainer input {
+  background-color: #17062a;
+}
+.purple main header .slidecontainer input::-webkit-slider-runnable-track {
+  background: #1e0936;
+}
+.purple main header .slidecontainer input::-webkit-slider-thumb {
+  background: #00ded0;
+}
+.purple main header .slidecontainer input::-webkit-slider-thumb:hover {
+  background: #93fff8;
+}
+.purple main header .slidecontainer input:focus::-webkit-slider-runnable-track {
+  background: #1e0936;
+}
+.purple main .screen {
+  background-color: #1e0936;
+}
+.purple main .screen .previous-number,
+.purple main .screen .current-number {
+  color: #ffe53d;
+}
+.purple main .buttons .btn_container {
+  background-color: #1e0936;
+}
+.purple main .buttons .num {
+  background-color: #331c4d;
+  color: #ffe53d;
+  box-shadow: inset 0px -4px 0px #881c9e;
+}
+.purple main .buttons .num:hover {
+  background-color: #6c34ac;
+}
+.purple main .buttons .num:active {
+  background-color: #331c4d;
+}
+.purple main .buttons .blueBtn {
+  background-color: #56077c;
+  box-shadow: inset 0px -4px 0px #be15f4;
+}
+.purple main .buttons .blueBtn:hover {
+  background-color: #8631af;
+}
+.purple main .buttons .blueBtn:active {
+  background-color: #56077c;
+}
+.purple main .buttons .equal {
+  background-color: #00ded0;
+  box-shadow: inset 0px -4px 0px #6cf9f1;
+  color: #1a2327;
+}
+.purple main .buttons .equal:hover {
+  background-color: #93fff8;
+}
+.purple main .buttons .equal:active {
+  background-color: #00ded0;
+}
+
+header {
+  position: relative;
+  width: 327px;
+  height: 100%;
+  color: #ffffff;
+  margin-bottom: 32px;
+}
+@media only screen and (min-width: 1440px) {
+  header {
+    width: 540px;
+  }
+}
+header h1 {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 35.84px;
+  letter-spacing: -0.53px;
+}
+header h2 {
+  position: absolute;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 13.44px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  right: 90px;
+  top: 15px;
+}
+header .slidecontainer {
+  position: absolute;
+  right: 0;
+  bottom: 0px;
+  height: 44px;
+  width: 71px;
+}
+header .slidecontainer .para {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 13.44px;
+  text-transform: uppercase;
+  padding-left: 3px;
+  padding-right: 3px;
+  margin-bottom: 5px;
+}
+header .slidecontainer .para .one {
+  padding-left: 7px;
+}
+header .slidecontainer .para .three {
+  padding-right: 7px;
+}
+header .slidecontainer input {
+  width: 71px;
+  -webkit-appearance: none;
+}
+header .slidecontainer input:focus {
+  outline: none;
+}
+header .slidecontainer input::-webkit-slider-runnable-track {
+  height: 26px;
+  cursor: pointer;
+  border-radius: 13px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+header .slidecontainer input::-webkit-slider-thumb {
+  height: 16px;
+  width: 16px;
+  border-radius: 15px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: 5px;
+}
+
+.screen {
+  min-width: 327px;
+  min-height: 88px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+@media only screen and (min-width: 1440px) {
+  .screen {
+    min-height: 128px;
+  }
+}
+.screen .current-number {
+  margin-right: 24px;
+}
+@media only screen and (min-width: 1440px) {
+  .screen .current-number {
+    margin-right: 32px;
+  }
+}
+.screen .previous-number,
+.screen .current-number {
+  font-size: 32px;
+  font-weight: 700;
+}
+@media only screen and (min-width: 1440px) {
+  .screen .previous-number,
+.screen .current-number {
+    font-size: 48px;
+  }
+}
+
+.buttons {
+  height: 100%;
+}
+.buttons .btn_container {
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-top: 24px;
+  padding-left: 15px;
+  padding-bottom: 15px;
+  border-radius: 10px;
+  width: 327px;
+}
+@media only screen and (min-width: 1440px) {
+  .buttons .btn_container {
+    height: 480px;
+    width: 540px;
+    padding-left: 25px;
+  }
+}
+.buttons button {
+  font-family: "Spartan", sans-serif;
+  width: 60px;
+  height: 64px;
+  margin-bottom: 13px;
+  margin-right: 13px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+@media only screen and (min-width: 1440px) {
+  .buttons button {
+    width: 101px;
+    margin-right: 25px;
+  }
+}
+.buttons .num {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 31.36px;
+  letter-spacing: -0.47px;
+}
+@media only screen and (min-width: 1440px) {
+  .buttons .num {
+    font-size: 32px;
+    line-height: 35.84px;
+    letter-spacing: -0.53px;
+  }
+}
+.buttons .blueBtn {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 17.92px;
+  letter-spacing: -0.27px;
+}
+@media only screen and (min-width: 1440px) {
+  .buttons .blueBtn {
+    font-size: 20px;
+    line-height: 22.4px;
+    letter-spacing: -0.33px;
+  }
+}
+.buttons .equal {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+}
+@media only screen and (min-width: 1440px) {
+  .buttons .equal {
+    font-size: 20px;
+  }
+}
+.buttons .reset,
+.buttons .equal {
+  width: 133px;
+  height: 64px;
+}
+@media only screen and (min-width: 1440px) {
+  .buttons .reset,
+.buttons .equal {
+    width: 227px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+        <link rel="stylesheet" href="./assets/style/style.css" />
+        <title>Calculator App</title>
+    </head>
+    <body>
+        <main>
+            <header>
+                <h1>calc</h1>
+                <h2>theme</h2>
+                <div class="slidecontainer">
+                    <div class="para">
+                        <p class="one">1</p>
+                        <p>2</p>
+                        <p class="three">3</p>
+                    </div>
+                    <input
+                        type="range"
+                        name="slider"
+                        id="slider"
+                        min="1"
+                        max="3"
+                        value="1"
+                    />
+                </div>
+            </header>
+            <section class="screen">
+                <div data-previous-number class="previous-number"></div>
+                <div data-current-number class="current-number"></div>
+            </section>
+            <section class="buttons">
+                <div class="btn_container">
+                    <button data-number class="num">7</button>
+                    <button data-number class="num">8</button>
+                    <button data-number class="num">9</button>
+                    <button data-delete class="blueBtn del">DEL</button>
+                    <button data-number class="num">4</button>
+                    <button data-number class="num">5</button>
+                    <button data-number class="num">6</button>
+                    <button data-operation class="num">+</button>
+                    <button data-number class="num">1</button>
+                    <button data-number class="num">2</button>
+                    <button data-number class="num">3</button>
+                    <button data-operation class="num">-</button>
+                    <button data-number class="num">.</button>
+                    <button data-number class="num">0</button>
+                    <button data-operation class="num">/</button>
+                    <button data-operation class="num">x</button>
+                    <button data-reset class="blueBtn reset">RESET</button>
+                    <button data-equal class="equal">=</button>
+                </div>
+            </section>
+        </main>
+        <script src="./index.js"></script>
+        <script src="./theme.js"></script>
+    </body>
+</html>

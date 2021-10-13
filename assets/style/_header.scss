@@ -1,0 +1,84 @@
+@use '_variables' as *;
+
+header {
+    position: relative;
+    width: 327px;
+    height: 100%;
+    color: $fontWhiteColor;
+    margin-bottom: 32px;
+
+    @media only screen and (min-width: 1440px) {
+        width: 540px;
+    }
+
+    h1 {
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 35.84px;
+        letter-spacing: -0.53px;
+    }
+
+    h2 {
+        position: absolute;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 13.44px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        right: 90px;
+        top: 15px;
+    }
+
+    .slidecontainer {
+        position: absolute;
+        right: 0;
+        bottom: 0px;
+        height: 44px;
+        width: 71px;
+        .para {
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 13.44px;
+            text-transform: uppercase;
+            padding-left: 3px;
+            padding-right: 3px;
+            margin-bottom: 5px;
+
+            .one {
+                padding-left: 7px;
+            }
+
+            .three {
+                padding-right: 7px;
+            }
+        }
+
+        input {
+            width: 71px;
+            -webkit-appearance: none;
+            &:focus {
+                outline: none;
+            }
+            &::-webkit-slider-runnable-track {
+                height: 26px;
+                cursor: pointer;
+                border-radius: 13px;
+                padding-left: 4px;
+                padding-right: 4px;
+            }
+            &::-webkit-slider-thumb {
+                height: 16px;
+                width: 16px;
+                border-radius: 15px;
+                cursor: pointer;
+                -webkit-appearance: none;
+                margin-top: 5px;
+            }
+        }
+    }
+}
